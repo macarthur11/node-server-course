@@ -22,11 +22,13 @@ app.use((req,res,next) => {
     next();
 });
 
+/*
 app.use((req, res, next) => {
     res.render('maintenance.hbs', {
         pageTitle: 'Site Under Maintenance'
     })
 })
+*/
 
 app.set('view engine', 'hbs');
 
