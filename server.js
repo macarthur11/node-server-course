@@ -30,6 +30,12 @@ app.use((req, res, next) => {
 })
 */
 
+app.get('/projects', (req,res)=>{
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
+    });
+})
+
 app.set('view engine', 'hbs');
 
 hbs.registerHelper('getCurrentYear', () => {
